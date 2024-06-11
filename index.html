@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Playlist Project!</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/166bc92e69.js" crossorigin="anonymous"></script>
+  </head>
+
+
+  
+  <body>
+	<div class="container">
+		<div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">   
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="media/clockwork.jpeg" class="song-img">
+      <h1>I Appear Missing</h1>
+      <p>Queens Of The Stone Age</p>
+      <audio controls id="song">
+        <source src="media/I Appear Missing.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onClick = "playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+		</div>
+	</div>
+
+
+    
+</body>
+</html>
